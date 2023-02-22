@@ -1,0 +1,20 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx,expl3}
+
+\begin{document}
+\fbox{\includegraphics{trimbox}}
+%\ExplSyntaxOn
+%\fbox{%
+%\pdfpagebox=4 ~ %force use of trimbox
+%\pdfximage{trimbox.pdf}
+%\int_set:Nn\l_tmpa_int{\pdflastximage} 
+%\includegraphics[viewport=
+%\dim_to_decimal:n{\pdfximagebbox\l_tmpa_int~1}~ % Returns lower-left x
+%\dim_to_decimal:n{\pdfximagebbox\l_tmpa_int~2}~ % Returns lower-left y
+%\dim_to_decimal:n{\pdfximagebbox\l_tmpa_int~3}~ % Returns upper-right x
+%\dim_to_decimal:n{\pdfximagebbox\l_tmpa_int~4}  % Returns upper-right y
+%]{trimbox}}
+%\ExplSyntaxOff
+
+\end{document}

@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage{graphicx,luacode}
+
+\begin{luacode*}
+   function bbTrimBox(options,docname)
+   tex.print("\\includegraphics")
+   if options ~= "" then
+   tex.print("["..options)
+      end
+      local doc = epdf.open(docname)
+      if doc == nil then
+      doc = epdf.open(docname .. ".pdf")
+      end
+      if doc == nil then
+      tex.error("Could not find PDF file \""..docname.."\"")
+      if options ~= "" then
+   tex.print("]")
+   end
+   else
+   if options ~= "" then
+   tex.print(",")
+   else
+   tex.print("[")
+      end
+      local box = doc:getCatalog():getPage(1):getTrimBox()
+      local bb = "bb=" .. box.x1 .. " " .. box.y1 .. " " .. box.x2 .. " " .. box.y2
+      tex.print(bb)
+   tex.print("]")
+   -- doc:close() -- cannot call this, "attempt to call method 'close' (a nil value)"
+   end
+   tex.print("{"..docname.."}")
+   end
+\end{luacode*}
+
+\newcommand\includegraphicsbb[2][]{\directlua{bbTrimBox("#1", "#2")}}
+
+\begin{document}
+\fontsize{30}{40}\selectfont
+This a test text \includegraphics[height=1em, pagebox=trimbox, clip=false]{trimbox} \includegraphicsbb[height=1em]{trimbox}
+\end{document}
