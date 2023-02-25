@@ -397,7 +397,7 @@
       \Large
       \vspace{-3mm}
       \begin{equation}
-         \Braket{\Psi_{bs}\left(^7\textrm{Be}\right)|\hat{\mathcal{M}}_{\mathrm{EM}}|\Psi_{sc}\left(^3\textrm{He}+\alpha\right)}$
+         \Braket{\Psi_{bs}\left(^7\textrm{Be}\right)|\hat{\mathcal{M}}_{\mathrm{EM}}|\Psi_{sc}\left(^3\textrm{He}+\alpha\right)}
      \end{equation}
      \vspace{-2cm}
         %$\Braket{\Psi_{bs}\left(^7\textrm{Be}\right)|(\bm{E}+\bm{M})|\Psi_{sc}\left(^3\textrm{He}+\alpha\right)}$
@@ -575,41 +575,330 @@
 
 \end{frame}
 
+\begin{frame}
+   \frametitle{Results are promising but convergence needs to be explored}
+   \begin{textblock*}{\linewidth}(10pt,30pt)
+   \end{textblock*}
+
+   \begin{textblock*}{\linewidth}(0pt,80pt)
+      \begin{center}
+         \visible<1>{
+            \includegraphics[scale=0.7]{figures/capture.pdf}
+         }
+      \end{center}
+   \end{textblock*}
+
+   \begin{textblock*}{\linewidth}(0pt,80pt)
+      \begin{center}
+         \visible<2->{
+            \includegraphics[scale=0.7]{figures/capture-zoomed_comp.pdf}
+         }
+      \end{center}
+   \end{textblock*}
+
+   \begin{textblock*}{8.1cm}(280pt,150pt)
+      \begin{rotate}{20}
+         {\transparent{0.2} \fontsize{30}{40}\selectfont \textcolor{red}{Preliminary}}
+      \end{rotate}
+   \end{textblock*}
+
+\end{frame}
+
+\begin{frame}
+   \frametitle{$\beta$-Delayed Proton Emission}
+
+   \visible<1->{
+   \begin{equation}
+      ^{11}\textrm{Be} \rightarrow {}^{10}\textrm{Be} + p + \beta^- + \bar{\nu}_e
+   \end{equation}
+}
+
+   \begin{itemize}
+         \visible<2->{
+      \item Energetically forbidden unless $S_n<782$ keV
+      }
+      \visible<3->{
+      \item $^{11}$Be: $S_n = 501.6$ keV
+      }
+   \end{itemize}
+
+   %\begin{textblock*}{0.5\linewidth}(\linewidth,60pt)
+      %\begin{center}
+         %\includegraphics[scale=0.3]{/home/matkinson/research/ncsmc/be11_levels.pdf}
+      %\end{center}
+   %\end{textblock*}
+
+\end{frame}
+
+\begin{frame}
+   \begin{textblock*}{\linewidth}(0pt,-10pt)
+      \begin{center}
+         \includegraphics[scale=0.3]{figures/plb_snippet_smaller.png}
+      \end{center}
+   \end{textblock*}
+
+   %\begin{textblock*}{0.2\linewidth}(200pt,30pt)
+      %\textbf{2014}
+   %\end{textblock*}
+
+   \begin{textblock*}{\linewidth}(0pt,160pt)
+      \begin{itemize}
+            \visible<2->{
+         \item Indirectly observed $^{11}$Be$(\beta p)^{10}$Be 
+         }
+         \visible<3->{
+         \item Measured an extremely high branching ratio $b_p = 8.3\pm0.9 \times 10^{-6}$ 
+         }
+            \begin{itemize}
+                  \visible<4->{
+                  \item Orders of magnitude larger than theoretical predictions (\textit{e.g.} $3.0\times10^{-8}$)
+               }
+            \end{itemize}
+            \visible<5->{
+         \item Two proposed explanations:
+         }
+            \begin{enumerate}
+                  \visible<6->{
+               \item The neutron decays to an unobserved $p+^{10}$Be resonance in $^{11}$B
+               }
+               \visible<7->{
+               \item There are unobserved dark decay modes
+               }
+            \end{enumerate}
+      \end{itemize}
+   \end{textblock*}
+
+   \begin{textblock*}{200pt}(285pt,211pt)
+      \visible<4->{
+         \fontsize{6}{5.2}\selectfont \quad \quad D. Baye and E.M. Tursunov, PLB {\bf 696}, 4, 464-467 (2011)
+      }
+   \end{textblock*}
+\end{frame}
+
+\begin{frame}
+   \begin{textblock*}{\linewidth}(0pt,-10pt)
+      \begin{center}
+         \includegraphics[scale=0.3]{figures/prl_snippet_smaller.png}
+      \end{center}
+   \end{textblock*}
+
+   \begin{textblock*}{\linewidth}(10pt,150pt)
+      \begin{itemize}
+            \visible<2->{
+         \item Directly observed the protons from $^{11}$Be$(\beta p)^{10}$Be 
+         }
+         \visible<3->{
+         \item Measured consistent branching ratio $b_p = 1.3(3) \times 10^{-5}$ 
+         }
+            \begin{itemize}
+                  \visible<4->{
+               \item Still orders of magnitude larger than theoretical predictions
+               }
+            \end{itemize}
+            \visible<5->{
+            \item Predict the $(\frac{1}{2}^+,\frac{1}{2})$ proton resonance at 197 keV from the proton energy distribution
+         }
+      \end{itemize}
+   \end{textblock*}
+
+\end{frame}
+
+\begin{frame}
+   \frametitle{NCSMC Calculation of $^{11}$B and $^{11}$Be}
+
+   \begin{textblock*}{\linewidth}(10pt,30pt)
+      \begin{itemize}
+         \item NN-N4LO(500)+3Nlnl
+         \item $\hbar\Omega=18$ MeV, N$_{\mathrm{max}} = 7$
+         \item $\lambda_{\mathrm{SRG}} = 1.8$ fm$^{-1}$
+      \end{itemize}
+   \end{textblock*}
+
+   \begin{textblock*}{\linewidth}(0.4\linewidth,30pt)
+      \begin{itemize}
+            \visible<3->{
+         \item Parity inversion reproduced 
+         }
+         \visible<5->{
+         \item Resonance found, but not at expt. energy
+         }
+         \visible<6->{
+         \item Phenomenologically shift levels to calculate $\beta$-decay
+         }
+      \end{itemize}
+   \end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(0pt,75pt)
+      \visible<7->{
+         \includegraphics[scale=0.8]{figures/levels_b11.pdf}
+   }
+\end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(0pt,75pt)
+      \visible<1-6>{
+         \includegraphics[scale=0.8]{figures/levels_b11_noshift.pdf}
+   }
+\end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(0.65\linewidth,80pt)
+      \visible<4-8>{
+         \includegraphics[scale=0.8]{figures/phase}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(0.65\linewidth,80pt)
+      \visible<9->{
+         \includegraphics[scale=0.8]{figures/phase_shifted}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(0.31\linewidth,90pt)
+      \visible<8->{
+         \includegraphics[scale=0.8]{figures/levels}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(0.31\linewidth,90pt)
+      \visible<2-7>{
+         \includegraphics[scale=0.8]{figures/levels_noshift}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(0.5\linewidth,195pt)
+      \visible<10>{
+         \begin{tabular}{| c | c | c |} 
+            \hline
+            & NCSMC-shifted & Expt. \\
+            \hline
+            $E$ [keV] & 197 & 197(20) \\
+            \hline
+            $\Gamma$ [keV] & 10 & 12(5) \\
+            \hline
+         \end{tabular}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{8.1cm}(130pt,8.45cm)
+      \visible<1->{
+         \fontsize{6}{5.2}\selectfont \quad \quad P. Navratil, {{\it Few-Body Systems}} \textbf{41}, 117 (2007)
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{8.1cm}(290pt,8.45cm)
+      \visible<1->{
+         \fontsize{6}{5.2}\selectfont \quad \quad D.R. Entem \textit{et al.}, {{\it Phys. Rev. C}} \textbf{91}, 014002 (2015)
+      }
+   \end{textblock*}
+
+\end{frame}
+
 %\begin{frame}
-   %\frametitle{Results are promising but convergence needs to be explored}
-   %\begin{textblock*}{\linewidth}(10pt,30pt)
+   %\frametitle{NCSMC Calculation of $\beta$-decay}
+
+   %\begin{textblock*}{\linewidth}(0pt,40pt)
+   %\begin{itemize}
+         %\visible<1->{
+      %\item With the resonance found, need to calculate $\beta$-decay matrix element in the NCSMC
+      %}
+   %\end{itemize}
+%\end{textblock*}
+
+   %\begin{textblock*}{0.5\linewidth}(0.5\linewidth,60pt)
+      %\visible<3->{
+         %\includegraphics[scale=0.3]{figures/ncsmc_wavefunction.png}
+      %}
    %\end{textblock*}
 
-   %\begin{textblock*}{\linewidth}(0pt,80pt)
-      %\begin{center}
-         %\visible<1>{
-            %\includegraphics[scale=0.7]{figures/capture.pdf}
-         %}
-      %\end{center}
+   %\begin{textblock*}{0.5\linewidth}(0pt,60pt)
+      %\visible<2->{
+         %\begin{equation}
+            %B(GT) = \frac{\left|\Braket{\Psi_A^{J_f^\pi T_f}||\hat{\mathcal{O}}_{GT}||\Psi_A^{J_i^\pi T_i}}\right|^2}{2J_f+1}
+         %\end{equation}
+      %}
    %\end{textblock*}
 
-   %\begin{textblock*}{\linewidth}(0pt,80pt)
-      %\begin{center}
-         %\visible<2->{
-            %\includegraphics[scale=0.7]{figures/capture-zoomed_comp.pdf}
-         %}
-      %\end{center}
+   %\begin{textblock*}{\linewidth}(0pt,95pt)
+      %\visible<4->{
+         %\begin{align}
+            %\implies \braket{^{11}\textrm{B}||\hat{\mathcal{O}}_{GT}||^{11}\textrm{Be}} + &\braket{^{11}\textrm{B}||\hat{\mathcal{O}}_{GT}||^{10}\textrm{Be}\otimes n}\\
+            %&+ \braket{^{10}\textrm{Be}\otimes p||\hat{\mathcal{O}}_{GT}||^{11}\textrm{Be}} + \braket{^{10}\textrm{Be}\otimes p||\hat{\mathcal{O}}_{GT}||^{10}\textrm{Be}\otimes n}
+         %\end{align}
+      %}
    %\end{textblock*}
 
-   %\begin{textblock*}{8.1cm}(280pt,150pt)
+   %\begin{align}
+   %\end{align}
+
+   %\begin{textblock*}{\linewidth}(0pt,160pt)
+   %\begin{center}
+      %\visible<5->{
+      %\begin{tabular}{|c|c|c|c|} 
+
+         %\hline
+         %B(GT) & NCSM & NCSMC & Exp. \\
+         %\hline
+         %$^{11}$Be$(\frac{1}{2}^+,\frac{3}{2})\rightarrow ^{11}$B$(\frac{1}{2}^+,\frac{1}{2})$ & 0.0863 & 0.0675  & 0.00432 \\
+         %\hline
+         %$^{11}$Be$(\frac{1}{2}^+,\frac{3}{2})\rightarrow ^{11}$B$(\frac{3}{2}^+,\frac{1}{2})$ & 0.0231 & 0.00828 & 0.0104 \\
+         %\hline
+         %$^{11}$Be$(\frac{1}{2}^+,\frac{3}{2})\rightarrow ^{11}$B$(\frac{3}{2}^+,\frac{1}{2})$ & 2.92 & 1.85 & 0.228 \\
+         %\hline
+
+      %\end{tabular}
+   %}
+   %\end{center}
+%\end{textblock*}
+
+
+%\end{frame}
+
+\begin{frame}
+   \frametitle{$\beta$-Decay to Resonant State}
+   \begin{textblock*}{0.6\linewidth}(0.5\linewidth,30pt)
+      \visible<3->{
+         \begin{center}
+            \includegraphics[scale=0.7]{figures/gt.pdf}
+         \end{center}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(10pt,55pt)
+      \visible<1->{
+         \begin{equation}
+            B(GT) = \frac{\left|\Braket{\Psi_A^{J_f^\pi T_f}||\hat{\mathcal{O}}_{GT}||\Psi_A^{J_i^\pi T_i}}\right|^2}{2J_f+1}
+         \end{equation}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{0.5\linewidth}(10pt,125pt)
+      \visible<2->{
+         \includegraphics[scale=0.3]{figures/ncsmc_wavefunction.png}
+      }
+   \end{textblock*}
+
+   \begin{textblock*}{\linewidth}(0pt,180pt)
+      \begin{center}
+         \visible<4->{
+            \begin{tabular}{|c|cc|} 
+               \hline
+               $\braket{p+^{10}\mathrm{Be}||\hat{\mathcal{O}}_{GT}||^{11}\mathrm{Be}}$ & NCSMC & Expt. \\
+               \hline
+               $B(GT)$ & 1.82  & $5.5^{+8.3}_{-3.3}$ \\
+               \hline
+               $b_p$ & $4.07\times10^{-6}$ & $1.3(3)\times10^{-5}$ \\
+               \hline
+            \end{tabular}
+         }
+      \end{center}
+   \end{textblock*}
+
+   %\begin{textblock*}{8.1cm}(60pt,220pt)
       %\begin{rotate}{20}
-         %{\transparent{0.2} \fontsize{30}{40}\selectfont \textcolor{red}{Preliminary}}
+         %{\transparent{0.2} \fontsize{80}{90}\selectfont \textcolor{red}{Preliminary}}
       %\end{rotate}
    %\end{textblock*}
 
-%\end{frame}
-
-%\begin{frame}
-   %\frametitle{Moving Forward}
-   %\begin{itemize}
-      %\item Vary which chiral NN and NNN interactions are used to provide a theoretical uncertainty
-   %\end{itemize}
-%\end{frame}
+\end{frame}
 
 \begin{frame}
    \frametitle{Thanks}
